@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page Design</title>
+   <style>
+	body{
+		background-color: burlywood;
+	}
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 50%; 
+    padding: 12px 20px; 
+    margin: 8px 350px; 
+    display: flex;
+    border: 1px solid #de8d87;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
+}
+textarea {
+    height: 170px; 
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border: 6px solid #4CAF50;
+    outline: none; 
+}
+::placeholder {
+    color: #1e1d1d; 
+    font-style: italic; 
+}
+#submit {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 20px 45px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 9px 600px;
+            cursor: pointer;
+            border-radius: 30px;
+            transition-duration: 0.4s;           
+        }
+        #submit:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+</style>
+	<center><header>CONTACT FORM</header></center>
+	<form id="form" class="topBefore">		
+			  <input id="name" type="text" placeholder="NAME">
+			  <input id="email" type="text" placeholder="E-MAIL">
+			  <input id="number" type="number" placeholder="PHONE NUMBER">
+			  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+        <a href="./end_page.html"  <input id="submit" type="submit" value="GO!" button > Send Message</button> </a>
+	</form>
+  </body>
+</html>

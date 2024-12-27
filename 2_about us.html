@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  background-color: #ffcff1;
+    }
+  .responsive-container-block {
+  min-height: 85px;
+  height: fit-content;
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  justify-content: flex-start;
+  }
+ .text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  line-height: 25px;
+  }
+ .responsive-container-block.bigContainer {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+ }
+ .text-blk.headingText {
+  font-size: 23px;
+  font-weight: 700; 
+  line-height: 28px;
+  color: rgb(0, 135, 177);
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+ }
+ .allText {
+  width: 50%;
+ }
+ .text-blk.subHeadingText {
+  color: rgb(122, 102, 102);
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-right: 10px;
+}
+.text-blk.description {
+  font-size: 18px;
+  line-height: 28px;
+  color: #841b2d;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+h1{
+    font-weight: 300;
+    font-style: oblique;
+}
+.explore {
+  cursor: pointer;
+  box-shadow: rgba(244, 152, 146, 0.25) 0px 10px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-top: 9px;
+  padding-right: 45px;
+  padding-bottom: 9px;
+  padding-left: 45px;
+}
+.explore:hover {
+  background-color: rgb(255, 235, 234);
+  color: rgb(244, 152, 146);
+}
+.responsive-container-block.Container {
+  margin-top: 80px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 1320px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.responsive-container-block.Container.bottomContainer {
+  flex-direction: row;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+.allText.aboveText {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+}
+.allText.bottomText {
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+.mainVideo {
+  width: 85%;
+  height: 450px;
+  margin-top: -30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.videoContainer {
+  width: 46%;
+  height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding-left: 10px;
+}
+@media (max-width: 1024px) {
+  .responsive-container-block.Container {
+    max-width: 850px;
+  }
+  .text-blk.description {
+    font-size: 18px;
+  }
+  .allText {
+    width: 40%;
+    margin-left: 20px;
+  }
+  .responsive-container-block.bigContainer {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .text-blk.subHeadingText {
+    font-size: 30px;
+  }
+  .responsive-container-block.Container.bottomContainer {
+    margin-top: 80px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+  }
+  .responsive-container-block.Container {
+    max-width: 830px;
+  }
+  .allText.aboveText {
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+  .allText.bottomText {
+    margin-top: 30px;
+    margin-right: 50px;
+  }
+  .allText.bottomText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .responsive-container-block.Container.bottomContainer {
+    flex-direction: column;
+  }
+  .text-blk.subHeadingText {
+    text-align: center;
+  }
+  .text-blk.description {
+    text-align: center;
+  } 
+  .explore {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #inc0s {
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+  }
+  .videoContainer {
+    width: 100%;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+  }
+  .mainVideo {
+    width: 100%;
+  }
+  .allText.bottomText {
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+  }
+@media (max-width: 768px) {
+  .allText {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .responsive-container-block.Container {
+    flex-direction: column;
+    height: auto;
+  }
+  .text-blk.subHeadingText {
+    text-align: center;
+    font-size: 30px;
+    line-height: 18px;
+    color:#cb4154;
+  }
+  .text-blk.description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .allText {
+    margin-top: 40px;
+  }
+  .allText.aboveText {
+    margin-top: 40px;
+  }
+   .responsive-container-block.Container {
+    margin-top: 80px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+  } 
+
+  .responsive-container-block.Container.bottomContainer {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    padding-left: 10px;
+  } 
+ @media (max-width: 500px) {
+  .responsive-container-block.Container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+  } 
+  .videoContainer {
+    height: 100px;
+    width: 80px;
+  }
+  .text-blk.description {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 50px 0;
+  }
+  .text-blk.subHeadingText {
+    font-size: 14px;
+    font-style: italic;
+  }}
+}} 
+</style>
+        <div class="responsive-container-block Container bottomContainer">
+            <div class="allText bottomText">
+            <h1>About Us</h1>
+            <h2 class="text-blk subHeadingText">
+                    Step into a world where art knows no boundaries.</h2> 
+                    <p class="text-blk description">Our Virtual Art Gallery offers a unique and immersive experience, 
+                    bringing together stunning masterpieces from artists across the globe right to your screen. Whether 
+                    you're a seasoned art enthusiast or a curious explorer, there's something here for everyone.</p>
+                    <p class="text-blk description"> 
+                    Browse through our curated collections that span various art movements, styles, and periods. 
+                    From classical paintings to contemporary digital art, each piece is carefully selected to provide a rich and varied
+                    viewing experience. Our gallery is more than just a visual treat.</p>
+              </div>
+              <div class="videoContainer">
+                <iframe width="450" height="300" src="https://www.youtube.com/embed/3ewO-gy1VKo?si=xoA0aXk_cSJl9jKW" title="YouTube video player" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+</body>
+</html>

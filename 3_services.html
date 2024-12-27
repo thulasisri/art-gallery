@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Four card feature section</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+ body {
+  background-image: url(./img/getty.jpg);
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+}
+img {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+}
+
+.heading {
+  width: 50%;
+  margin: auto;
+}
+
+.heading1 {
+  font-weight:bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+  max-width: 350px;
+  padding: 15px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px hsl(229, 6%, 66%);
+  border-top-style: solid;
+}
+.main {
+  position: relative;
+}
+
+.model {
+  height: 200px;
+  border-top-color: cyan;
+  position: absolute;
+  left: 150px;
+  top: 120px;
+}
+
+.market{
+  height: 200px;
+  border-top-color: red;
+  position: absolute;
+  left: 550px;
+  top: 5px;
+}
+
+.pricings{
+  height: 200px;
+  border-top-color: purple;
+  border-bottom-color: purple;
+  position: absolute;
+  left: 550px;
+  top: 260px;
+}
+
+.contact{
+  height: 200px;
+  border-top-color: mediumblue;
+  position: absolute;
+  left:  950px;
+  top: 120px;
+}
+.para {
+  text-align:center;
+}
+  </style>
+  </head>
+
+<body>
+  <div class="heading">
+    <h1 class="heading1">Lucia's virtual art gallery</h1>
+    <h1></h1>
+    <p>Welcome to our virtual art gallery! Discover our captivating collection of stunning artwork.</p>
+  </div>
+  <a href="/1artists.html">
+  <div class="main">
+    <div class="model card">
+      <h3>Model of artworks</h3>
+      <p class="para">Explore diverse collections, discover inspiring works, and engage with art in a way like never before—all from the comfort of your own space.</p>
+      <img src="img/gd.jpeg" alt="model">
+    </div>
+  </a>
+  <a href="hire.html">
+    <div class="market card">
+      <h3>Artisanal Marketplace</h3>
+      <p class="para">customized arts by artists /approach for selling your arts </p>
+      <img src="img/img artist.png" alt="customized">
+    </div>
+    </a>
+    <a href="./11_online_artexhb.html">
+    <div class="pricings card">
+      <h3> Online Art Exhibitions / our pricings </h3>
+      <p class="para"> Hosting and Booking  online exhibitions  and our membership pricings for the online exhibition pack !!!</p>
+      <img src="img/pricing.jpg" alt="pricings">
+    </div>
+  </a>
+    <a href="./4_contactus.html">
+      <div class="contact us card">
+      <h3>contact us form</h3>  
+      <p class="para">Get in Touch with Us!!! We're here to help! Whether you have questions about our art collection, need assistance with your purchase, or want to collaborate with us, we're just a message away.</p>
+      <img src="img/contact us.jpeg" alt="contact us">
+    </div>
+    </a>
+  </div>
+</body>
+</html>

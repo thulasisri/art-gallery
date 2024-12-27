@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family:'Times New Roman', Times, serif;
+                background-color:white;
+                color: #333;
+            }
+            header {
+                background-color:#6c9cb9;
+                border-radius: 20px;
+            }
+            .navbar {
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+            }
+            .logo h1 {
+                color: white;
+                margin: 7px;
+                padding: 0px;
+                font-family: 'Times New Roman', Times, serif;
+                color: #fff; 
+                font-style: italic;
+                font-size: 2rem; 
+                margin: 30px; 
+                white-space: nowrap; 
+            }
+            nav ul {
+                list-style: none;
+                margin: 10px;
+                padding: 10px;
+                display: flex;
+            }
+            nav ul li {
+                margin-left: 30px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.1em;
+            }
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+            .logo {
+                width: 10px; 
+                height: 100px; 
+                display: flex;
+                margin: 20 30px;
+                padding: 0px;
+                border-radius: 50%; 
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+                transition: transform 0.3s ease;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            h1 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 20px;
+            }
+
+            p {
+                text-align: center;
+                color: #666;
+                margin-bottom: 40px;
+                font-size: 18px;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 20px;
+                padding: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .card {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+                width: 300px;
+                text-align: center;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                overflow: hidden;
+            }
+
+            .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            .card img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .card h2 {
+                font-size: 20px;
+                margin: 15px 0;
+                color: #333;
+            }
+
+            .card p {
+                color: #777;
+                padding: 0 15px;
+                font-size: 16px;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            @media (max-width: 768px) {
+                .container {
+                    justify-content: center;
+                }
+
+                .card {
+                    width: 90%;
+                }
+            }
+
+            @media (max-width: 480px) {
+                h1 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                .card {
+                    width: 100%;
+                }
+            }
+
+     </style>
+   </head>
+  <body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+                <h1> Lucia's Virtual Gallery</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="./3_services.html">services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>Art Gallery</h1>
+    <p>to bid your favorite artist by thier arts just book now!!!</p>
+    <div class="container">
+        <div class="card">
+            <a href="./hire.html"> <img src="https://s32625.pcdn.co/wp-content/uploads/2018/04/Honerlah-Randy_Letting-Go_AcrylicWorks5_artists-network-780x1024.jpg" alt="Art 1">    </a>
+            <h2>Randy L. Honerlah</h2>
+            <p> <strong> Letting Go </strong>by Randy L. Honerlah </p>
+        </div>
+        <div class="card">
+            <a href="hire.html"> <img src="https://s32625.pcdn.co/wp-content/uploads/2018/04/Rimpo-April_Lanterns_AcrylicWorks5_artists-network-768x1039.jpg" alt="Art 2"></a>
+            <h2>April M. Rimpo</h2>
+            <p><strong>Laterns</strong> by April M. Rimpo</p>
+        </div>
+
+        <div class="card">
+            <a href="hire.html"> <img src="https://s32625.pcdn.co/wp-content/uploads/2018/04/Anderson_FancyFeathers-768x1154.jpg" alt="Art 3"></a>
+            <h2>Cher Anderson</h2>
+            <p><strong>Fancy Feathers</strong>by Cher Anderson</p>
+        </div>
+        <div class="card">
+            <a href="hire.html"><img src="https://s32625.pcdn.co/wp-content/uploads/2018/04/York_Butterfly-Effect-1024x737.jpg" alt="Art 4"></a>
+            <h2> Yelena York</h2>
+            <p><strong>Butterfly Effect</strong> by Yelena York</p>
+        </div> 
+        <div class="card">
+            <a href="hire.html"><img src="https://d3rf6j5nx5r04a.cloudfront.net/vdAQvmNPWOLF8bfCot_daDxt0j4=/1120x0/product/5/7/93b405c835734cd8b5035e1a0b80ff16.jpg" alt="Art 5"></a>
+            <h2>Sebastian Zapata Hantsch</h2>
+            <p><strong>Cowboy </strong> by Sebastian Zapata Hantsch</p>
+        </div>
+        <div class="card">
+            <a href="hire.html"> <img src="https://d3rf6j5nx5r04a.cloudfront.net/xXk7UHK7NFR5rrZ7jmf3jIB6nFQ=/1120x0/product/7/5/3d1f8c5e2263452da927101b0b993cbf_opt.jpg" alt="Art 6"></a>
+            <h2>Maria Romano</h2>
+            <p><strong>Dance of wings </strong> by Maria Romano</p>
+        </div>
+        <div class="card">
+            <a href="hire.html">  <img src="https://d3rf6j5nx5r04a.cloudfront.net/t1ow8Mv1n1pkcTJAGalWbPSXCUI=/1120x0/product/9/d/c2af7c2e50e94f8faa178219aef278e5_opt.jpg" alt="Art 7"></a>
+            <h2>Camilla Dowse</h2>
+            <p><strong>Technicolour Summer </strong>by Camilla Dowse </p>
+        </div>
+        <div class="card">
+            <a href="hire.html"><img src="https://d3rf6j5nx5r04a.cloudfront.net/8Q_1BwPwtg-N0rOLSlvEjOCbwUM=/1120x0/product/8/e/3cb4ae5437754355acfc7742c13c377d_opt.jpg" alt="Art 8"></a> 
+            <h2> Bonnie and Clyde</h2>
+            <p><strong>Another Perspective</strong>by  Bonnie and Clyde </p>
+        </div>
+        <div class="card">
+            <a href="hire.html"><img src="https://d3rf6j5nx5r04a.cloudfront.net/VC7IO8q6hF03V0cTzFP2a03fD04=/1120x0/product/0/9/607804e8414c42d29d6210328738c909_opt.jpg" alt="Art 9"></a> 
+            <h2>Richard K. Jolley </h2>
+            <p> <strong>Serenade</strong>by  Richard K. Jolley </p>
+        </div>
+    </a>
+</body>
+</html>

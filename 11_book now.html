@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm your booking</title>
+    <style>
+        body{
+            background-color: #ffa089;
+            margin: 15%;
+            padding: 150px;
+            font-family: 'Times New Roman', Times, serif;
+            align-items: center;
+            display: flex;
+            height: 0px;
+            line-height: 200%;
+        }
+        .booking-container{
+            background-color: #fbceb1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 60px;
+            width: 500px;
+        }
+        h1{
+            text-align: center;
+            font-size: 28px;
+            text-transform: capitalize;
+            color: black;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .booking-form{
+            display: flex;
+            flex-direction: column;
+        }
+        .booking-form label{
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .booking-form input{
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            width: 100%;
+        }
+        .confirm-button{
+            background-color: #cd5b45;
+            color: #fff;
+            padding: 12px 20px;
+            border-color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3 ease;
+            justify-content: center;
+            margin: 30%;
+            text-decoration: none;
+        }
+        .confirm-button:hover{
+            background-color: white;
+            color: #cd5b45;
+            justify-content: center;
+        }
+        .confirm-button:active{
+            background-color: peachpuff;
+        }
+        @media(max-width:500px){
+            .booking-container{
+                width: 90%;
+                padding: 20px;
+            }
+            h1{
+                font-size: 20px;
+            }
+            .booking-form input,.booking-form textarea{
+                font-size: 13px;            
+            }
+            .confirm-button{
+                padding: 10px 16px;
+                font-size: 14px;
+                justify-content: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="booking-container">
+    <h1>confirm your booking</h1>
+    <form id=""booking-form>
+    <label for="name">Full Name : </label>
+    <input type="text" id="name" value=""><br>
+    <label for="phone">Phone number : </label>
+    <input type="tel" id="number" value=""><br>
+    <label for="date">Booking Date : </label>
+    <input type="date" name="" id="date" value=""><br>
+    <label for="email">E-Mail id  :</label>
+    <input type= "email" id="email" value=""><br>
+    <label for="number of guests" min="2" aria-placeholder="Enter number of guests" required>Number Of Guests : </label><br>
+    <input type="checkbox" name="" id=""value="adults">adults<br>
+    <input type="checkbox" name="" id="" >children<br>
+    <label for="total number of guests">Total number of guests : </label>
+    <input type="number"><br>
+    <label for="time">time slot : </label>
+    <input type="time" name="time" id=""><br>
+    <label for="comments">Additional comments : </label>
+    <input type="comments" name="comments" placeholder="add any specific requests of comments" id="">
+    <a href="/13_end_page.html" button type="submit" class="confirm-button">Confirm-Booking</button></a>
+    </form>
+</div>
+</body>
+</html>

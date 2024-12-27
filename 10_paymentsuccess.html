@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#fdd5b1 ;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+        .success-container {
+            background-color: #fbceb1;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+            color: black;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        .summary {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .summary p {
+            font-size: 16px;
+            color: #333;
+            margin: 15px 0;
+        }
+        .summary strong {
+            color: #555;
+        }
+        .return-btn {
+            background-color: #fbab60;
+            color: black;
+            padding: 13px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display:flexbox;
+            width: 80%;
+        }
+        .return-btn:hover {
+            background-color:#fa8072 ;
+        }
+        .check-icon {
+            font-size: 48px;
+            color: #e7feff;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="check-icon">✔️</div>
+        <h2>Payment Successful!</h2>
+        <div class="summary">
+            <p><strong>Payment Method:</strong> Credit Card (Visa)</p>
+            <p><strong>Cardholder Name</strong>John carnel</p>
+            <p><strong>card number</strong>1234567890ABC</p>
+            <p><strong>Expiry date </strong>13/27</p>
+            <p><strong>G-pay id</strong>johncarnel1327@oksbi</p>
+            <p><strong>Subscription Plan:</strong> Premium Plan</p>  
+            <p><strong>Date:</strong> September 15, 2024</p>
+        </div>
+        <a href="./subscriptions.html" class="return-btn">Return to Homepage</a>
+    </div>
+</body>
+</html>

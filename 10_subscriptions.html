@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffebcd;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0px;
+            gap: 20px;
+        }
+        p{
+            justify-content: center;
+            text-transform: capitalize;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 100;
+        }
+        .plan {
+            background-color: #fff;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+        }
+        .plan h3 {
+            font-size: 24px;
+            color: #333;
+        }
+        .price {
+            font-size: 32px;
+            margin: 10px 0;
+            color: #8ed491;
+        }
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+            margin:30px 0;
+        }
+        .plan ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            color: gray;
+        }
+        .plan ul li:last-child {
+            border-bottom: none;
+        }
+        .signup-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color:brown;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .signup-btn:hover {
+            background-color: peachpuff;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Your Subscription Plan</h1>
+    <p>take your desired plan to get acces to all arts and models easily, we like to offer special packages to our users</p>
+    <div class="pricing-table">
+        <div class="plan">
+            <h3>Basic Plan</h3>
+            <div class="price">$9.99/month</div>
+            <ul>
+                <li>Access to basic arts</li>
+                <li>500MB storage</li>
+                <li>Email support and chat support </li>
+                <li>Single user</li>
+            </ul>
+            <a href="10_signupsub.html" class="signup-btn">Sign Up</a>
+        </div>
+        <div class="plan">
+            <h3>Standard Plan</h3>
+            <div class="price">$19.99/month</div>
+            <ul>
+                <li>Access to all Arts</li>
+                <li>5GB storage</li>
+                <li>Priority email address</li>
+                <li>Up to 3 users</li>
+            </ul>
+            <a href="10_signupsub.html" class="signup-btn">Sign Up</a>
+        </div>
+        <div class="plan">
+            <h3>Premium Plan</h3>
+            <div class="price">$29.99/month</div>
+            <ul>
+                <li>Access to all premium Arts</li>
+                <li>50GB storage and download access</li>
+                <li>Call support and videos available</li>
+                <li>Unlimited users</li>
+            </ul>
+            <a href="10_signupsub.html" class="signup-btn">Sign Up</a>
+        </div>
+    </div>
+
+</body>
+</html>

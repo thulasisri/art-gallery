@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LUCIA VIRTUAL ART GALLERY LOGIN PAGE</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style media="screen">
+      *,*:before,*:after{
+    padding: 3px;
+    margin: -5px;
+    box-sizing: border-box ;
+        }
+        body{
+            background-image: url(./img/dart2.jpg);
+            background-position: 100%;
+            background-size: fixed;
+            
+        }
+        .background{
+            width: 450px;
+            height: 600px;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 50%; 
+        }
+        .background .shape{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+        .shape:first-child{
+            background: linear-gradient(
+                #1845ad,
+                #23a2f6
+            );
+            left: -70px;
+            top: -80px;
+        }
+        .shape:last-child{
+            background: linear-gradient(
+                to right,
+                #ff512f,
+                #f09819
+            );
+            right: -30px;
+            bottom: -80px;
+        }
+        form{
+            height: 520px;
+            width: 400px;
+            background-color: rgba(255,255,255,0.13);
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(30px);
+            border: 2px solid rgba(255,255,255,0.1);
+            box-shadow: 0 0 40px rgba(8,7,16,0.6);
+            padding: 50px 35px;
+        }
+        form *{
+            font-family: 'Poppins',sans-serif;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+            line-height: 2;
+        }
+        form h3{
+            font-size: large;
+            font-weight: 400;
+            line-height: 3px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        
+        }
+        form h4{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: small;
+            font-weight: 100;
+            text-align:  top ;
+        
+        }
+
+        label{
+            display:flex;
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 400;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        input{
+            display: flexbox;
+            height: 50px;
+            width: 100%;
+            background-color: grey;
+            border-radius: 30px;
+            padding: 0 10px;
+            margin-top: 10px;
+            font-size: 15px;
+            text-align: left;
+            font-weight: 300;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        ::placeholder{
+            color: #e5e5e5;
+        }
+        button{
+            margin-top: 50px;
+            width: 100%;
+            background-color: #deb887;
+            color: #080710;
+            padding: 15px 0;
+            font-size: 15px;
+            font-weight: 800;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            display: flexbox;
+            justify-content: center; /* Centers the icons horizontally */
+            gap: 30px; 
+            margin-top: 0px; 
+        }
+
+        .social-icons a {
+            text-decoration: none; /* Removes the underline from the links */
+            color: #333; /* Default icon color */
+            font-size: 24px; /* Size of the icons */
+            transition: color 0.3s ease; /* Smooth transition effect when hovering */
+        }
+
+        .social-icons a:hover {
+            color: #0077b5; /* Change the color of the icon when hovering */
+        }
+
+        .social-icons i {
+            display: inline-block;
+            width: 70px; /* Width of the icon */
+            height: 70px; /* Height of the icon */
+            text-align: center;  
+            border-radius: 100%; 
+        }
+
+        .social-icons a:hover i {
+            background-color: #d7eee5; /* Change background color on hover */
+        }
+        .signup-link {
+            font-family: 'Times New Roman', Times, serif, sans-serif; /* Sets the font */
+            font-size: 14px; /* Sets the font size */
+            margin-top: 15px; /* Adds some space above the link */
+            text-align: center; /* Centers the text horizontally */
+        }
+
+        .signup-link a {
+            color: #0077b5; 
+            text-decoration: none; /* Removes underline from the link */
+            font-weight: bold; /* Makes the link text bold */
+            margin-left: 5px; /* Adds some space between the text and link */
+            transition: color 0.3s ease; /* Smooth transition effect for hover */
+        }
+
+        .signup-link a:hover {
+            color: #005f8c; 
+        }
+        h1{
+        font-weight: 100;
+        font-style: oblique;
+        text-align: left;
+        margin: 10px;
+        padding: 11px;
+        text-transform: capitalize;
+        }
+</style>
+</head>
+<body>
+    <h1 > LUCIA'S ART GALLERY</h1>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form><center>
+        <h3>Login </h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button>Log In</button>
+        
+        <div class="signup-link"> Not a member?<a href="./signin1.html">Signup now</a>
+            <div class="social-login">
+                <h4>log-in via</h4>
+                <!--to add links in icons we need to add a anchor tag before the icon tag-->
+                <div class="social-icons">
+                  <a href="https://www.secure.facebook.com/pages/Login/103721483000692/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                 <i class="fa-brands fa-instagram"></i></a>
+                 <a href="https://x.com/i/flow/login" target="_blank">
+                 <i class="fa-brands fa-twitter"></i>
+                 </a>
+                </div>
+</div></center>
+    </form>
+</body>
+</html>

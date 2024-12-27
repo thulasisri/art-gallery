@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Methods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: palegoldenrod;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .payment-container {
+            background-color:palegoldenrod;
+            padding: 50px;
+            border-radius: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+            max-width: 400px;
+            width: 100%;
+        }
+        .payment-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: block;
+            color: #333;
+        }
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+        .payment-methods {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .payment-methods label {
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .payment-methods input[type="radio"] {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            background-color:#c5b358  ;
+            color: black;
+            border: none;
+            padding: 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            align-items: center;
+        }
+        .submit-btn:hover {
+            background-color: #d4af37 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Select Payment Method</h2>
+        <div class="form-group">
+            <label for="payment-method">Choose your payment method:</label>
+            <div class="payment-methods">
+                <label><input type="radio" name="payment" value="credit-card" checked>Credit Card</label>
+                <label><input type="radio" name="payment" value="paypal">UPI</label>
+                <label><input type="radio" name="payment" value="bank-transfer">Bank Transfer</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="card-name">Cardholder Name</label>
+            <input type="text" id="card-name" placeholder="Enter cardholder name">
+        </div>
+        <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input type="number" id="card-number" placeholder="Enter card number">
+        </div>
+        <div class="form-group">
+            <label for="expiry-date">Expiry Date</label>
+            <input type="text" id="expiry-date" placeholder="MM/YY">
+        </div>
+        <div class="form-group">
+            <label for="G-pay email">G-Pay id</label>
+            <input type="email" id="Gpay-email" placeholder="Enter G-pay id">
+        </div>
+        <div class="select-plan">
+          <label for="select-plan">Select-plan</label>
+          <label><input type="radio" id="select-plan" placeholder="">Basic Plan</label>  
+          <label><input type="radio" id="select-plan" placeholder="">Standard Plan</label>  
+          <label><input type="radio" id="select-plan" placeholder="">Premium Plan</label>  
+        </div>
+        <div class="Date">
+            <label for="date">DATE<input type="date"></label>
+        </div>
+        <a href="./paymentsuccess.html"><button class="submit-btn" type="submit">Next</button></a>
+
+    </div>
+</body>
+</html>
+  
